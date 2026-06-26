@@ -12,18 +12,23 @@
     font-style: normal;
 }
 
+/* -------------------- */
+/* Base */
+/* -------------------- */
+
+html,
 body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+    color: #fff;
+    font-family: "CrewSans", sans-serif;
+}
 
-    margin:0;
-
-    background:#000;
-
-    font-family:"CrewSans", sans-serif;
-
-    color:white;
-
-    overflow:hidden;
-
+* {
+    box-sizing: border-box;
 }
 
 h1,
@@ -32,11 +37,8 @@ h3,
 h4,
 h5,
 h6 {
-
-    font-family:"CrewSans", sans-serif;
-
-    font-weight:700;
-
+    font-weight: 700;
+    margin: 0;
 }
 
 p,
@@ -44,123 +46,210 @@ li,
 span,
 div,
 footer {
+    font-weight: 400;
+}
 
-    font-family:"CrewSans", sans-serif;
+/* -------------------- */
+/* Main Overlay */
+/* -------------------- */
 
-    font-weight:400;
+#overlay {
+    width: 100%;
+    height: 100%;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------------- */
+/* Header */
+/* -------------------- */
+
+header {
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+#title h1 {
+    font-size: clamp(40px, 5vw, 90px);
+}
+
+#title p {
+    margin-top: .4rem;
+    font-size: clamp(18px, 1.8vw, 32px);
+    color: #d0d0d0;
+}
+
+/* -------------------- */
+/* Panels */
+/* -------------------- */
+
+#content {
+
+    flex: 1;
+
+    display: flex;
+
+    gap: 1%;
+
+    min-height: 0;
 
 }
 
-#overlay{
+.panel {
 
-background:rgba(0,0,0,.55);
+    padding: 1.2vw;
 
-height:100vh;
+    overflow-y: auto;
 
-padding:30px;
-
-box-sizing:border-box;
+    overflow-x: hidden;
 
 }
 
-header{
+/* Column widths */
 
-display:flex;
+.yellow {
 
-justify-content:center;
+    flex: 2;
 
-align-items:center;
+    background: #ffd400;
 
-text-align:center;
-
-margin-bottom:30px;
+    color: white;
 
 }
 
-#title h1{
+.cyan {
 
-margin:0;
+    flex: 2;
 
-font-size:64px;
+    background: #49c9cc;
 
-font-weight:bold;
-
-}
-
-#title p{
-
-margin-top:8px;
-
-font-size:24px;
-
-color:#ddd;
+    color: white;
 
 }
 
-#content{
+.blue {
 
-display:grid;
+    flex: 1;
 
-grid-template-columns:40% 40% 20%;
+    background: #23afe3;
 
-gap:10px;
-
-height:75vh;
+    color: white;
 
 }
 
-.panel{
+/* -------------------- */
+/* Typography */
+/* -------------------- */
 
-padding:20px;
+.panel h1 {
 
-box-sizing:border-box;
+    font-size: clamp(24px, 2.5vw, 52px);
 
-overflow:auto;
-
-}
-
-.yellow{
-
-background:#ffd400;
-
-color:white;
+    margin-bottom: .6rem;
 
 }
 
-.cyan{
+.panel h2 {
 
-background:#47d4d4;
+    font-size: clamp(22px, 2vw, 42px);
 
-}
-
-.blue{
-
-background:#11bdf5;
+    margin-bottom: .8rem;
 
 }
 
-#avatar{
+.panel h3 {
 
-width:150px;
+    font-size: clamp(18px, 1.5vw, 30px);
 
-display:block;
-
-margin:auto;
+    margin-bottom: .5rem;
 
 }
 
-footer{
+.panel p,
+.panel li,
+.panel div {
 
-position:absolute;
+    font-size: clamp(14px, 1vw, 24px);
 
-bottom:15px;
+    line-height: 1.35;
 
-width:100%;
+}
 
-text-align:center;
+ul {
 
-font-size:32px;
+    padding-left: 1.2rem;
 
-font-weight:bold;
+    margin: 0;
+
+}
+
+hr {
+
+    border: none;
+
+    height: 3px;
+
+    background: rgba(255,255,255,.85);
+
+    margin: 1.5rem 0;
+
+}
+
+/* -------------------- */
+/* Driver */
+/* -------------------- */
+
+#avatar {
+
+    width: 70%;
+
+    max-width: 180px;
+
+    aspect-ratio: 1;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 1rem auto;
+
+}
+
+/* -------------------- */
+/* Footer */
+/* -------------------- */
+
+footer {
+
+    margin-top: 2vh;
+
+    text-align: center;
+
+    font-size: clamp(20px, 2vw, 40px);
+
+    font-weight: 700;
+
+}
+
+/* -------------------- */
+/* Scrollbar */
+/* -------------------- */
+
+::-webkit-scrollbar {
+
+    width: 8px;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: rgba(255,255,255,.3);
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: transparent;
 
 }
