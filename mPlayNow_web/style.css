@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "CrewSans";
+    src: url("fonts/thecrewsans-regular-webfont.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CrewSans";
+    src: url("fonts/thecrewsans-bold-webfont.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+
+    margin:0;
+
+    background:#000;
+
+    font-family:"CrewSans", sans-serif;
+
+    color:white;
+
+    overflow:hidden;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family:"CrewSans", sans-serif;
+
+    font-weight:700;
+
+}
+
+p,
+li,
+span,
+div,
+footer {
+
+    font-family:"CrewSans", sans-serif;
+
+    font-weight:400;
+
+}
+
+#overlay{
+
+background:rgba(0,0,0,.55);
+
+height:100vh;
+
+padding:30px;
+
+box-sizing:border-box;
+
+}
+
+header{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+margin-bottom:30px;
+
+}
+
+#title h1{
+
+margin:0;
+
+font-size:64px;
+
+font-weight:bold;
+
+}
+
+#title p{
+
+margin-top:8px;
+
+font-size:24px;
+
+color:#ddd;
+
+}
+
+#content{
+
+display:grid;
+
+grid-template-columns:40% 40% 20%;
+
+gap:10px;
+
+height:75vh;
+
+}
+
+.panel{
+
+padding:20px;
+
+box-sizing:border-box;
+
+overflow:auto;
+
+}
+
+.yellow{
+
+background:#ffd400;
+
+color:white;
+
+}
+
+.cyan{
+
+background:#47d4d4;
+
+}
+
+.blue{
+
+background:#11bdf5;
+
+}
+
+#avatar{
+
+width:150px;
+
+display:block;
+
+margin:auto;
+
+}
+
+footer{
+
+position:absolute;
+
+bottom:15px;
+
+width:100%;
+
+text-align:center;
+
+font-size:32px;
+
+font-weight:bold;
+
+}

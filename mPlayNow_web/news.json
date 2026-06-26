@@ -1,0 +1,63 @@
+{
+  "patchNotes": [
+    "Removed old resources",
+    "Added dynamic wind sounds",
+    "Updated NetGuard",
+    "New speedometer"
+  ],
+
+  "crew": [
+
+    {
+      "role":"Mission Organizer",
+      "name":"Omar"
+    },
+
+    {
+      "role":"Mechanic",
+      "name":"Harry"
+    },
+
+    {
+      "role":"Tuner",
+      "name":"Alita"
+    }
+
+  ],
+
+  "featured":{
+
+    "title":"We are rebranding the game!",
+
+    "text":"Nitro Drive Enhanced is becoming its own franchise."
+
+  },
+
+  "driver":{
+
+    "name":"Alex Taylor",
+
+    "avatar":"assets/avatar.png"
+
+  },
+
+  "messages":[
+
+    {
+
+      "from":"Harry",
+
+      "text":"How's your new whip doing?"
+
+    },
+
+    {
+
+      "from":"Alita",
+
+      "text":"Wanna race?"
+
+    }
+
+  ]
+}
