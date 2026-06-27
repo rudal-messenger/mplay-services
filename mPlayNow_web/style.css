@@ -26,122 +26,164 @@ body{
     font-family:"CrewSans",sans-serif;
 }
 
+body{
+    padding:2%;
+}
+
+/* ========================= */
+/* Layout */
+/* ========================= */
+
 #overlay{
     width:100%;
     height:100%;
-    padding:2.5%;
     display:flex;
     flex-direction:column;
 }
 
-/* ---------------- HEADER ---------------- */
+/* ========================= */
+/* Header */
+/* ========================= */
 
 header{
-    height:22%;
+
+    height:15%;
+
     display:flex;
-    flex-direction:column;
+
     justify-content:center;
+
     align-items:center;
+
+}
+
+#title{
+
+    text-align:center;
+
 }
 
 #title h1{
 
-    font-size:8vh;
+    font-size:9vh;
+
     font-weight:700;
-    text-align:center;
+
+    line-height:.9;
 
 }
 
 #title p{
 
-    margin-top:.3vh;
-    font-size:2.2vh;
-    color:#dddddd;
-    text-align:center;
+    margin-top:.4vh;
+
+    font-size:2.7vh;
+
+    color:#dcdcdc;
 
 }
 
-/* ---------------- CONTENT ---------------- */
+/* ========================= */
+/* Panels */
+/* ========================= */
 
 #content{
 
-    flex:1;
+    height:77%;
 
     display:flex;
-
-    justify-content:space-between;
 
     gap:1.5%;
 
 }
 
-/* ---------------- PANELS ---------------- */
-
 .panel{
 
-    border:none;
+    padding:1.3vh;
 
     overflow:hidden;
-
-    padding:1.3%;
 
     color:white;
 
 }
 
+/* Left */
+
 .yellow{
 
     width:41%;
 
-    background:#FFD000;
+    background:linear-gradient(
+        to bottom,
+        #FFD91A,
+        #F7C400
+    );
 
 }
+
+/* Middle */
 
 .cyan{
 
     width:39%;
 
-    background:#4CC7CC;
+    background:linear-gradient(
+        to bottom,
+        #5AD4D8,
+        #49C5C8
+    );
 
 }
+
+/* Right */
 
 .blue{
 
     width:20%;
 
-    background:#1FAEE3;
+    background:linear-gradient(
+        to bottom,
+        #2DB8EC,
+        #23AEE3
+    );
 
 }
 
-/* ---------------- TYPOGRAPHY ---------------- */
+/* ========================= */
+/* Typography */
+/* ========================= */
 
 .panel h1{
 
-    font-size:4.8vh;
-
-    font-weight:700;
+    font-size:6vh;
 
     line-height:1;
 
-    margin-bottom:1vh;
+    margin-bottom:.8vh;
+
+    font-weight:700;
 
 }
 
 .panel h2{
 
-    font-size:3.5vh;
+    font-size:4.5vh;
 
     margin-bottom:1vh;
+
+    font-weight:700;
 
 }
 
 .panel h3{
 
-    font-size:2.6vh;
+    font-size:3.2vh;
 
     margin-top:1vh;
 
-    margin-bottom:.5vh;
+    margin-bottom:.4vh;
+
+    font-weight:700;
 
 }
 
@@ -149,21 +191,19 @@ header{
 .panel li,
 .panel div{
 
-    font-size:2vh;
+    font-size:2.5vh;
 
-    line-height:1.3;
+    line-height:1.28;
 
 }
 
 ul{
 
-    margin-left:1.5vw;
+    margin-left:1.3vw;
 
 }
 
 hr{
-
-    margin:1vh 0;
 
     border:none;
 
@@ -171,25 +211,31 @@ hr{
 
     background:white;
 
+    margin:1vh 0;
+
 }
 
-/* ---------------- DRIVER ---------------- */
+/* ========================= */
+/* Avatar */
+/* ========================= */
 
 #avatar{
 
-    display:block;
+    width:65%;
 
-    width:70%;
+    display:block;
 
     margin:1vh auto;
 
 }
 
-/* ---------------- FOOTER ---------------- */
+/* ========================= */
+/* Footer */
+/* ========================= */
 
 footer{
 
-    height:10%;
+    height:8%;
 
     display:flex;
 
@@ -197,8 +243,46 @@ footer{
 
     align-items:center;
 
-    font-size:3.8vh;
+    font-size:4.2vh;
 
     font-weight:700;
+
+}
+
+/* ========================= */
+/* Scrollbar */
+/* ========================= */
+
+::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:rgba(255,255,255,.25);
+
+}
+
+/* ========================= */
+/* Small polish */
+/* ========================= */
+
+.panel h1,
+.panel h2,
+.panel h3,
+footer,
+#title h1{
+
+    text-shadow:0 .08vh .15vh rgba(0,0,0,.25);
+
+}
+
+.panel{
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,.08),
+        inset 0 -2px rgba(0,0,0,.15);
 
 }
