@@ -2,254 +2,203 @@
     font-family: "CrewSans";
     src: url("fonts/thecrewsans-regular-webfont.ttf") format("truetype");
     font-weight: 400;
-    font-style: normal;
 }
 
 @font-face {
     font-family: "CrewSans";
     src: url("fonts/thecrewsans-bold-webfont.ttf") format("truetype");
     font-weight: 700;
-    font-style: normal;
 }
 
-/* -------------------- */
-/* Base */
-/* -------------------- */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 html,
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
-    background: #000;
-    color: #fff;
-    font-family: "CrewSans", sans-serif;
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#000;
+    color:#fff;
+    font-family:"CrewSans",sans-serif;
 }
 
-* {
-    box-sizing: border-box;
+#overlay{
+    width:100%;
+    height:100%;
+    padding:2.5%;
+    display:flex;
+    flex-direction:column;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 700;
-    margin: 0;
+/* ---------------- HEADER ---------------- */
+
+header{
+    height:22%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 
-p,
-li,
-span,
-div,
-footer {
-    font-weight: 400;
-}
+#title h1{
 
-/* -------------------- */
-/* Main Overlay */
-/* -------------------- */
-
-#overlay {
-    width: 100%;
-    height: 100%;
-    padding: 2vw;
-    display: flex;
-    flex-direction: column;
-}
-
-/* -------------------- */
-/* Header */
-/* -------------------- */
-
-header {
-    text-align: center;
-    margin-bottom: 2vh;
-}
-
-#title h1 {
-    font-size: clamp(40px, 5vw, 90px);
-}
-
-#title p {
-    margin-top: .4rem;
-    font-size: clamp(18px, 1.8vw, 32px);
-    color: #d0d0d0;
-}
-
-/* -------------------- */
-/* Panels */
-/* -------------------- */
-
-#content {
-
-    flex: 1;
-
-    display: flex;
-
-    gap: 1%;
-
-    min-height: 0;
+    font-size:8vh;
+    font-weight:700;
+    text-align:center;
 
 }
 
-.panel {
+#title p{
 
-    padding: 1.2vw;
-
-    overflow-y: auto;
-
-    overflow-x: hidden;
-
-}
-
-/* Column widths */
-
-.yellow {
-
-    flex: 2;
-
-    background: #ffd400;
-
-    color: white;
+    margin-top:.3vh;
+    font-size:2.2vh;
+    color:#dddddd;
+    text-align:center;
 
 }
 
-.cyan {
+/* ---------------- CONTENT ---------------- */
 
-    flex: 2;
+#content{
 
-    background: #49c9cc;
+    flex:1;
 
-    color: white;
+    display:flex;
 
-}
+    justify-content:space-between;
 
-.blue {
-
-    flex: 1;
-
-    background: #23afe3;
-
-    color: white;
+    gap:1.5%;
 
 }
 
-/* -------------------- */
-/* Typography */
-/* -------------------- */
+/* ---------------- PANELS ---------------- */
 
-.panel h1 {
+.panel{
 
-    font-size: clamp(24px, 2.5vw, 52px);
+    border:none;
 
-    margin-bottom: .6rem;
+    overflow:hidden;
 
-}
+    padding:1.3%;
 
-.panel h2 {
-
-    font-size: clamp(22px, 2vw, 42px);
-
-    margin-bottom: .8rem;
+    color:white;
 
 }
 
-.panel h3 {
+.yellow{
 
-    font-size: clamp(18px, 1.5vw, 30px);
+    width:41%;
 
-    margin-bottom: .5rem;
+    background:#FFD000;
+
+}
+
+.cyan{
+
+    width:39%;
+
+    background:#4CC7CC;
+
+}
+
+.blue{
+
+    width:20%;
+
+    background:#1FAEE3;
+
+}
+
+/* ---------------- TYPOGRAPHY ---------------- */
+
+.panel h1{
+
+    font-size:4.8vh;
+
+    font-weight:700;
+
+    line-height:1;
+
+    margin-bottom:1vh;
+
+}
+
+.panel h2{
+
+    font-size:3.5vh;
+
+    margin-bottom:1vh;
+
+}
+
+.panel h3{
+
+    font-size:2.6vh;
+
+    margin-top:1vh;
+
+    margin-bottom:.5vh;
 
 }
 
 .panel p,
 .panel li,
-.panel div {
+.panel div{
 
-    font-size: clamp(14px, 1vw, 24px);
+    font-size:2vh;
 
-    line-height: 1.35;
-
-}
-
-ul {
-
-    padding-left: 1.2rem;
-
-    margin: 0;
+    line-height:1.3;
 
 }
 
-hr {
+ul{
 
-    border: none;
-
-    height: 3px;
-
-    background: rgba(255,255,255,.85);
-
-    margin: 1.5rem 0;
+    margin-left:1.5vw;
 
 }
 
-/* -------------------- */
-/* Driver */
-/* -------------------- */
+hr{
 
-#avatar {
+    margin:1vh 0;
 
-    width: 70%;
+    border:none;
 
-    max-width: 180px;
+    height:2px;
 
-    aspect-ratio: 1;
-
-    object-fit: cover;
-
-    display: block;
-
-    margin: 1rem auto;
+    background:white;
 
 }
 
-/* -------------------- */
-/* Footer */
-/* -------------------- */
+/* ---------------- DRIVER ---------------- */
 
-footer {
+#avatar{
 
-    margin-top: 2vh;
+    display:block;
 
-    text-align: center;
+    width:70%;
 
-    font-size: clamp(20px, 2vw, 40px);
-
-    font-weight: 700;
+    margin:1vh auto;
 
 }
 
-/* -------------------- */
-/* Scrollbar */
-/* -------------------- */
+/* ---------------- FOOTER ---------------- */
 
-::-webkit-scrollbar {
+footer{
 
-    width: 8px;
+    height:10%;
 
-}
+    display:flex;
 
-::-webkit-scrollbar-thumb {
+    justify-content:center;
 
-    background: rgba(255,255,255,.3);
+    align-items:center;
 
-}
+    font-size:3.8vh;
 
-::-webkit-scrollbar-track {
-
-    background: transparent;
+    font-weight:700;
 
 }
