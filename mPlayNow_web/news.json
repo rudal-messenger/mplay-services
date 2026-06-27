@@ -1,35 +1,61 @@
 {
-  "version": "v1.1.10WR",
+  "version": "v1.2.0 Early Access",
 
-  "featured": {
-    "title": "We are rebranding the game!",
-    "subtitle": "A new era begins",
-    "body": "Nitro Drive Enhanced is becoming its own franchise..."
-  },
+  "cards": [
+    {
+      "type": "news",
+      "title": "Nitro Drive Enhanced enters Early Access!",
+      "subtitle": "Welcome!",
+      "body": "Thanks for playing the first public version of Nitro Drive Enhanced. More content is coming soon.",
+      "published": "2026-06-27"
+    },
+
+    {
+      "type": "event",
+      "title": "🚓 Police Weekend",
+      "subtitle": "2x Pursuit Rewards",
+      "body": "Earn double cash from all police pursuits this weekend.",
+      "start": "2026-06-28",
+      "end": "2026-06-30"
+    },
+
+    {
+      "type": "maintenance",
+      "title": "⚠ Server Maintenance",
+      "subtitle": "July 3",
+      "body": "Online services will be unavailable from 20:00–20:30 UTC.",
+      "start": "2026-07-03",
+      "end": "2026-07-03"
+    }
+  ],
 
   "patchNotes": [
-    "Removed old resources",
-    "Added dynamic wind sounds",
-    "Updated NetGuard",
-    "New Speedometer"
+    "Added dynamic news dashboard",
+    "Improved traffic AI",
+    "Fixed speedometer",
+    "Optimized loading"
   ],
 
   "crew": [
     {
-      "role": "Mission Organizer",
-      "name": "Omar"
+      "role":"Mission Organizer",
+      "name":"Omar"
+    },
+    {
+      "role":"Mechanic",
+      "name":"Harry"
     }
   ],
 
-  "driver": {
-    "name": "Alex Taylor",
-    "avatar": "assets/avatar.png"
+  "driver":{
+    "name":"Alex Taylor",
+    "avatar":"assets/avatar.png"
   },
 
-  "messages": [
+  "messages":[
     {
-      "from": "Harry",
-      "text": "How's your new whip doing?"
+      "from":"Harry",
+      "text":"How's your new whip doing?"
     }
   ]
 }
