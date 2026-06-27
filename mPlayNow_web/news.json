@@ -1,63 +1,35 @@
 {
+  "version": "v1.1.10WR",
+
+  "featured": {
+    "title": "We are rebranding the game!",
+    "subtitle": "A new era begins",
+    "body": "Nitro Drive Enhanced is becoming its own franchise..."
+  },
+
   "patchNotes": [
     "Removed old resources",
     "Added dynamic wind sounds",
     "Updated NetGuard",
-    "New speedometer"
+    "New Speedometer"
   ],
 
   "crew": [
-
     {
-      "role":"Mission Organizer",
-      "name":"Omar"
-    },
-
-    {
-      "role":"Mechanic",
-      "name":"Harry"
-    },
-
-    {
-      "role":"Tuner",
-      "name":"Alita"
+      "role": "Mission Organizer",
+      "name": "Omar"
     }
-
   ],
 
-  "featured":{
-
-    "title":"We are rebranding the game!",
-
-    "text":"Nitro Drive Enhanced is becoming its own franchise."
-
+  "driver": {
+    "name": "Alex Taylor",
+    "avatar": "assets/avatar.png"
   },
 
-  "driver":{
-
-    "name":"Alex Taylor",
-
-    "avatar":"assets/avatar.png"
-
-  },
-
-  "messages":[
-
+  "messages": [
     {
-
-      "from":"Harry",
-
-      "text":"How's your new whip doing?"
-
-    },
-
-    {
-
-      "from":"Alita",
-
-      "text":"Wanna race?"
-
+      "from": "Harry",
+      "text": "How's your new whip doing?"
     }
-
   ]
 }
